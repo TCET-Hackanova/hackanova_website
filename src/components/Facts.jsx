@@ -109,7 +109,7 @@ const SkeletonTwo = () => {
   });
 
   useEffect(() => {
-    const endDate = new Date("2025-02-16").getTime();
+    const endDate = new Date("2025-02-15").getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -135,7 +135,7 @@ const SkeletonTwo = () => {
       whileHover="hover"
       className="flex gap-2 flex-1 p-5 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2 text-white justify-center"
     >
-      <h1 className="text-4xl text-center font-semibold">Registration are open Till</h1>
+      <h1 className="text-4xl text-center font-semibold">Registration Are Open Till</h1>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-2xl mx-auto">
         <motion.div
           className=" flex flex-col items-center p-4 rounded-lg bg-black/20"
@@ -244,7 +244,7 @@ const SkeletonFour = () => {
         <FaClipboardList className="lg:text-7xl text-4xl text-green-600" />{" "}
         {/* Icon for Registrations */}
         <p className="sm:text-sm text-xs lg:text-xl text-center font-semibold text-neutral-500 mt-4">
-          1000+ 
+          850+ 
         </p>
         <p className="border border-green-500 bg-green-100 dark:bg-green-900/20 text-green-600 text-xs lg:text-xl rounded-full px-2 py-0.5 mt-4">
         Registrations
@@ -258,7 +258,7 @@ const SkeletonFour = () => {
         <FaTools className="lg:text-6xl text-4xl text-orange-600" />{" "}
         {/* Icon for Project Builds */}
         <p className="sm:text-sm lg:text-xl text-xs text-center font-semibold text-neutral-500 mt-4">
-          25+  
+          30+  
         </p>
         <p className="lg:text-xl border border-orange-500 bg-orange-100 dark:bg-orange-900/20 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
         Project
@@ -323,7 +323,7 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Registration Open Till 16th Feb 2025",
+    title: "Registrations Are Open Till 15th Feb 2025",
     description: (
       <span className="text-sm">Pack your bags and get ready to hack.</span>
     ),
@@ -333,7 +333,7 @@ const items = [
   },
 
   {
-    title: "Facts & Figures",
+    title: "Hackanova 3.0 Stats",
     description: (
       <span className="text-sm">
         The numbers that speak for themselves.
