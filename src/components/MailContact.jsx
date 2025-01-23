@@ -47,7 +47,7 @@ const ContactSection = () => {
                 <i className="bi bi-envelope text-3xl"></i>
                 <h4 className="text-xl font-semibold">Email:</h4>
                 <p>
-                  <a href="mailto:acmtcet8@gmail.com" className="text-blue-500">
+                  <a href="mailto:tcet.hackanova@gmail.com?subject=Hackanova%20Queries" className="text-blue-500">
                     tcet.hackanova@gmail.com
                   </a>
                 </p>
@@ -57,12 +57,12 @@ const ContactSection = () => {
                 <i className="bi bi-phone text-3xl"></i>
                 <h4 className="text-xl font-semibold">Call:</h4>
                 <p>
-                  <a href="https://wa.me/918850512993" className="text-blue-500">
-                    Joint Technical: +91 88505 12993
+                  <a href="https://wa.me/919021440961" className="text-blue-500">
+                    Joint Technical: +91 90214 40961
                   </a>
                   ,{' '}
-                  <a href="https://wa.me/917039554518" className="text-blue-500">
-                    Joint Technical: +91 70395 54518
+                  <a href="https://wa.me/919321679469" className="text-blue-500">
+                    Joint Technical:+91 93216 79469
                   </a>
                 </p>
               </div>
@@ -97,9 +97,9 @@ const ContactSection = () => {
           <div className="w-full lg:w-2/5 mt-8 lg:mt-0 border border-gray-800 rounded-md p-8">
             <form
               onSubmit={handleSubmit}
-              className="php-email-form space-y-6"
+              className="php-email-form space-y-10"
               method="POST"
-              action="mailto:core@tcet.acm.org"
+              action="mailto:tcet.hackanova@gmail.com?subject=Hackanova%20Queries"
             >
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div className="form-group">

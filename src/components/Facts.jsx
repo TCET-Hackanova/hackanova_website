@@ -261,7 +261,7 @@ const SkeletonOne = () => {
           hovered ? "pointer-events-auto" : "pointer-events-none"
         }`}
       >
-        <p className="lg:text-xl text-sm text-left">
+        <p className="lg:text-xl text-sm text-justify">
         Hackanova 4.0, organized by TSDW, is a hackathon focused on AI and Blockchain technologies, challenging participants to create innovative solutions under the theme "Redefining Norms Through Intelligence." It promotes collaboration, creativity, and competition, fostering the development of advanced tech solutions.</p>
       </motion.div>
 
@@ -310,11 +310,8 @@ const SkeletonFive = () => {
           hovered ? "pointer-events-auto" : "pointer-events-none"
         }`}
       >
-        <p className="lg:text-xl text-sm  text-left">
-          Thakur College of Engineering & Technology (TCET), a Graded Autonomous
-          Linguistic Minority Institute, was established in AY 2001-02 with a
-          clear objective of providing Quality Technical Education in tune with
-          international standards and contemporary global requirements.
+        <p className="lg:text-lg text-sm  text-justify">
+        The TCET Student Development and Welfare Association (TSDW), established in 2004-05 under the guidelines of Mumbai University, serves as a dynamic platform for creativity, innovation, and holistic growth. Commonly known as the Student Council, TSDW represents the student body and spearheads flagship events such as Hackanova These events beautifully merge technology, art, and community engagement.
         </p>
       </motion.div>
 

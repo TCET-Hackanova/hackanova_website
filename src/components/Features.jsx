@@ -148,7 +148,7 @@ const Features = () => (
       title={
         <img src="./img/Untitled (3).png" alt="ETHINDIA LOGO" className="h-24"/>
       }
-      dlink="https://ethindia.co "
+      dlink="https://ethindia.co"
       description="Devfolio is a platform that helps people host and manage hackathons, and create online portfolios."
       isComingSoon
     />
