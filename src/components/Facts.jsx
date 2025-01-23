@@ -33,53 +33,53 @@ export function BentoGridThirdDemo() {
   );
 }
 
-const SkeletonOne = () => {
-  const variants = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: 10,
-      rotate: 5,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
-  const variantsSecond = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: -10,
-      rotate: -5,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
 
-  return (
-    <motion.div
-      initial="initial"
-      whileHover="animate"
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2 justify-center items-center"
-    >
-      <div className="flex flex-col items-start text-left gap-2">
-        <p className="text-5xl flex flex-col gap-2 md:text-4xl lg:text-5xl font-bold text-white">
-          Redefining
-          <p className="bg-gradient-to-r from-orange-500 to-purple-800 bg-clip-text text-transparent">
-            Norms
-          </p>
-        </p>
-        <p className="text-5xl font-bold text-white">Through</p>
-        <p className="text-5xl md:text-4xl lg:text-5xl font-bold text-white mt-2">
-          Intelligence
-        </p>
-      </div>
-    </motion.div>
-  );
-};
+//   const variants = {
+//     initial: {
+//       x: 0,
+//     },
+//     animate: {
+//       x: 10,
+//       rotate: 5,
+//       transition: {
+//         duration: 0.2,
+//       },
+//     },
+//   };
+//   const variantsSecond = {
+//     initial: {
+//       x: 0,
+//     },
+//     animate: {
+//       x: -10,
+//       rotate: -5,
+//       transition: {
+//         duration: 0.2,
+//       },
+//     },
+//   };
+
+//   return (
+//     <motion.div
+//       initial="initial"
+//       whileHover="animate"
+//       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2 justify-center items-center"
+//     >
+//       <div className="flex flex-col items-start text-left gap-2">
+//         <p className="text-5xl flex flex-col gap-2 md:text-4xl lg:text-5xl font-bold text-white">
+//           Redefining
+//           <p className="bg-gradient-to-r from-orange-500 to-purple-800 bg-clip-text text-transparent">
+//             Norms
+//           </p>
+//         </p>
+//         <p className="text-5xl font-bold text-white">Through</p>
+//         <p className="text-5xl md:text-4xl lg:text-5xl font-bold text-white mt-2">
+//           Intelligence
+//         </p>
+//       </div>
+//     </motion.div>
+//   );
+// };
 const SkeletonTwo = () => {
   const variants = {
     initial: {
@@ -169,36 +169,7 @@ const SkeletonTwo = () => {
     </motion.div>
   );
 };
-const SkeletonThree = () => {
-  const variants = {
-    initial: {
-      backgroundPosition: "0 50%",
-    },
-    animate: {
-      backgroundPosition: ["0, 50%", "100% 50%", "0 50%"],
-    },
-  };
-  return (
-    <motion.div
-      initial="initial"
-      animate="animate"
-      variants={variants}
-      transition={{
-        duration: 5,
-        repeat: Infinity,
-        repeatType: "reverse",
-      }}
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] rounded-lg bg-dot-black/[0.2] flex-col space-y-2"
-      style={{
-        background:
-          "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
-        backgroundSize: "400% 400%",
-      }}
-    >
-      <motion.div className="h-full w-full rounded-lg"></motion.div>
-    </motion.div>
-  );
-};
+
 const SkeletonFour = () => {
   const first = {
     initial: {
@@ -267,49 +238,108 @@ const SkeletonFour = () => {
     </motion.div>
   );
 };
-const SkeletonFive = () => {
-  const variants = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: 10,
-      rotate: 5,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
-  const variantsSecond = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: -10,
-      rotate: -5,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
+
+
+const SkeletonOne = () => {
+  const [hovered, setHovered] = useState(false);
 
   return (
     <motion.div
       initial="initial"
-      whileHover="animate"
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col justify-center items-center"
+      animate={hovered ? "hover" : "initial"}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2 justify-center items-center relative overflow-hidden"
     >
-     <div class="relative">
-  <img 
-    src="/img/TSDW.png" 
-    alt="Logo" 
-    class="max-w-full  h-auto drop-shadow-[0_0_10px_rgba(255,255,255,0.7)] "
-  />
-</div>
+      <motion.div
+        variants={{
+          initial: { opacity: 0 },
+          hover: { opacity: 1 },
+        }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className={`absolute inset-0 bg-black bg-opacity-80 flex justify-center items-center text-white p-4 ${
+          hovered ? "pointer-events-auto" : "pointer-events-none"
+        }`}
+      >
+        <p className="text-xl text-left">
+        Hackanova 4.0, organized by TSDW, is a hackathon focused on AI and Blockchain technologies, challenging participants to create innovative solutions under the theme "Redefining Norms Through Intelligence." It promotes collaboration, creativity, and competition, fostering the development of advanced tech solutions.</p>
+      </motion.div>
 
+      <motion.div
+        variants={{
+          initial: { opacity: 1 },
+          hover: { opacity: 0 },
+        }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className="flex flex-col items-start text-left gap-2"
+      >
+        <p className="text-5xl flex flex-col gap-2 md:text-4xl lg:text-5xl font-bold text-white">
+          Redefining
+          <span className="bg-gradient-to-r from-orange-500 to-purple-800 bg-clip-text text-transparent">
+            Norms
+          </span>
+        </p>
+        <p className="text-5xl font-bold text-white">Through</p>
+        <p className="text-5xl md:text-4xl lg:text-5xl font-bold text-white mt-2">
+          Intelligence
+        </p>
+      </motion.div>
     </motion.div>
   );
 };
+
+const SkeletonFive = () => {
+  const [hovered, setHovered] = useState(false);
+
+  return (
+    <motion.div
+      initial="initial"
+      animate={hovered ? "hover" : "initial"}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col justify-center items-center relative overflow-hidden"
+    >
+      {/* Text Overlay on Hover */}
+      <motion.div
+        variants={{
+          initial: { opacity: 0 },
+          hover: { opacity: 1 },
+        }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className={`absolute inset-0 bg-black bg-opacity-80 flex justify-center items-center text-white p-4 ${
+          hovered ? "pointer-events-auto" : "pointer-events-none"
+        }`}
+      >
+        <p className="text-xl text-left">
+          Thakur College of Engineering & Technology (TCET), a Graded Autonomous
+          Linguistic Minority Institute, was established in AY 2001-02 with a
+          clear objective of providing Quality Technical Education in tune with
+          international standards and contemporary global requirements.
+        </p>
+      </motion.div>
+
+      {/* Image Section */}
+      <motion.div
+        variants={{
+          initial: { opacity: 1 },
+          hover: { opacity: 0 },
+        }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className="relative"
+      >
+        <img
+          src="./img/TSDW.png"
+          alt="Logo"
+          className="max-w-full h-auto drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
+        />
+      </motion.div>
+    </motion.div>
+  );
+};
+
+export default SkeletonFive;
+
+
 const items = [
   {
     title: "Hackanova 4.0",
@@ -323,7 +353,7 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Registrations Are Open Till 15th Feb 2025",
+    title: "Registrations are Open Till 15th Feb 2025",
     description: (
       <span className="text-sm">Pack your bags and get ready to hack.</span>
     ),
