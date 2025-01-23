@@ -13,20 +13,32 @@ gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
   useEffect(() => {
-      // Create a script element
+    // Check if the script already exists
+    const existingScript = document.querySelector("script[src='https://apply.devfolio.co/v2/sdk.js']");
+    if (!existingScript) {
+      // Create and append the script
       const script = document.createElement("script");
       script.src = "https://apply.devfolio.co/v2/sdk.js";
-      script.async = true;
-      script.defer = true;
+      script.async = false; // Load instantly
+      script.defer = false; // Execute immediately
 
-      // Append the script to the document body
-      document.body.appendChild(script);
-
-      // Cleanup: Remove the script when the component is unmounted
-      return () => {
-          document.body.removeChild(script);
+      // Event listeners to confirm loading
+      script.onload = () => {
+        console.log("Devfolio SDK loaded successfully");
+        alert("Devfolio SDK loaded successfully");
       };
-  }, []);
+      script.onerror = () => {
+        console.error("Failed to load Devfolio SDK");
+        alert("Failed to load Devfolio SDK");
+      };
+
+      document.head.appendChild(script);
+    } else {
+      console.log("Devfolio SDK already loaded");
+      alert("Devfolio SDK already loaded");
+    }
+  }, []); 
+
     useGSAP(() => {
         const clipAnimation = gsap.timeline({
             scrollTrigger: {
@@ -87,7 +99,7 @@ const About = () => {
                     </div>
                 </a> */}
                 <div
-                    data-hackathon-slug='hackanova-5'
+                    data-hackathon-slug='hackanova-o'
                     data-button-theme='dark-inverted'
                     style='height: 44px; width: 312px'
                 ></div>
