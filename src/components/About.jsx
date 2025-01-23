@@ -12,32 +12,6 @@ import { TiLocationArrow } from "react-icons/ti";
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
-  useEffect(() => {
-    // Check if the script already exists
-    const existingScript = document.querySelector("script[src='https://apply.devfolio.co/v2/sdk.js']");
-    if (!existingScript) {
-      // Create and append the script
-      const script = document.createElement("script");
-      script.src = "https://apply.devfolio.co/v2/sdk.js";
-      script.async = false; // Load instantly
-      script.defer = false; // Execute immediately
-
-      // Event listeners to confirm loading
-      script.onload = () => {
-        console.log("Devfolio SDK loaded successfully");
-        alert("Devfolio SDK loaded successfully");
-      };
-      script.onerror = () => {
-        console.error("Failed to load Devfolio SDK");
-        alert("Failed to load Devfolio SDK");
-      };
-
-      document.head.appendChild(script);
-    } else {
-      console.log("Devfolio SDK already loaded");
-      alert("Devfolio SDK already loaded");
-    }
-  }, []); 
 
     useGSAP(() => {
         const clipAnimation = gsap.timeline({
@@ -83,26 +57,15 @@ const About = () => {
 
                 {/* </div> */}
 
-                {/* <a
-                    href='https://devfolio.co'
-                    className='bg-white rounded-lg p-3 flex items-center shadow-md hover:shadow-lg transition mb-20'
+                <a
+                    href='https://hackanova-5.devfolio.co'
                 >
-                    <div className='flex items-center'>
                         <img
-                            src='./img/devfolio.png'
-                            className='h-6 mr-2'
+                            src='./img/_Dark.png'
+                            className='h-12 mb-2'
                             alt='DEVFOLIO LOGO'
                         />
-                        <span>
-                            <b>Apply with Devfolio</b>
-                        </span>
-                    </div>
-                </a> */}
-                <div
-                    data-hackathon-slug='hackanova-o'
-                    data-button-theme='dark-inverted'
-                    style='height: 44px; width: 312px'
-                ></div>
+                </a>
 
                 <BentoGridThirdDemo />
             </div>
