@@ -124,7 +124,7 @@ const Features = () => (
     <BentoCard
       src="videos/feature-2.mp4"
       title={
-        <img src="./img/_Colored.png" className="h-24" alt="DEVFOLIO LOGO"/>
+        <img src="./img/Devfolio_Logo-White.png" className="h-12" alt="DEVFOLIO LOGO"/>
       }
       dlink="https://devfolio.co"
       description="Devfolio is a platform that helps people host and manage hackathons, and create online portfolios."
@@ -135,7 +135,7 @@ const Features = () => (
     <BentoCard
       src="videos/feature-2.mp4"
       title={
-        <img src="./img/Colored.png" className="h-24" alt="POLYGON LOGO"/>
+        <img src="./img/Polygon_Logo-White@2x.png" className="h-12" alt="POLYGON LOGO"/>
       }
       dlink="https://polygon.technology/"
       description="Devfolio is a platform that helps people host and manage hackathons, and create online portfolios."
@@ -146,7 +146,7 @@ const Features = () => (
     <BentoCard
       src="videos/feature-2.mp4"
       title={
-        <img src="./img/Untitled (3).png" alt="ETHINDIA LOGO" className="h-24"/>
+        <img src="./img/ethindia-light.png" alt="ETHINDIA LOGO" className="h-12"/>
       }
       dlink="https://ethindia.co"
       description="Devfolio is a platform that helps people host and manage hackathons, and create online portfolios."
