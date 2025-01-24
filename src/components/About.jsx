@@ -43,7 +43,7 @@ const About = () => {
     return (
 
         <div id='about' className=' w-screen'>
-            <div className='z- mb-24 mt-52 flex flex-col items-center gap-2 '>
+            <div className='z- mb-24 mt-52 flex flex-col items-center gap-2 px-2'>
                 {/* <div className="z-10 before:bg-[radial-gradient(50%_100%,#8E24AA,transparent)] relative before:absolute before:inset-[-10%_-2%] before:-z-10 before:blur-3xl before:rounded-t-full"> */}
 
                 <SAnimatedTitle
@@ -57,7 +57,7 @@ const About = () => {
 
                 {/* </div> */}
 
-                <a
+                <a target="_blank"
                     href='https://hackanova-5.devfolio.co'
                 >
                         <img

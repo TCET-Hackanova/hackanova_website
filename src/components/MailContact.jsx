@@ -47,7 +47,7 @@ const ContactSection = () => {
                 <i className="bi bi-envelope text-3xl"></i>
                 <h4 className="text-xl font-semibold">Email:</h4>
                 <p>
-                  <a href="mailto:tcet.hackanova@gmail.com?subject=Hackanova%20Queries" className="text-blue-500">
+                  <a target='_blank' href="mailto:tcet.hackanova@gmail.com?subject=Hackanova%20Queries" className="text-blue-500">
                     tcet.hackanova@gmail.com
                   </a>
                 </p>
@@ -57,25 +57,25 @@ const ContactSection = () => {
                 <i className="bi bi-phone text-3xl"></i>
                 <h4 className="text-xl font-semibold">Call:</h4>
                 <p>
-                  <a href="https://wa.me/919021440961" className="text-blue-500">
+                  <a target='_blank' href="https://wa.me/919021440961" className="text-blue-500">
                     Joint Technical: +91 90214 40961
                   </a>
                   ,{' '}
-                  <a href="https://wa.me/919321679469" className="text-blue-500">
+                  <a target='_blank' href="https://wa.me/919321679469" className="text-blue-500">
                     Joint Technical:+91 93216 79469
                   </a>
                 </p>
               </div>
               <div className="gap-5 flex">
                 <h1 className='text-xl font-semibold'>Socials</h1>
-              <a href="https://www.instagram.com/tsdw_tcet?igsh=eXN1NDdyNjd5cG8z">
+              <a target='_blank' href="https://www.instagram.com/tsdw_tcet?igsh=eXN1NDdyNjd5cG8z">
           <BsInstagram className="text-2xl text-white"  />
           </a>
-          <a target="blank" href="https://www.youtube.com/@tcet_tsdw" >
+          <a target="_blank" href="https://www.youtube.com/@tcet_tsdw" >
           <BsYoutube className="text-2xl text-white" />
           
           </a>
-          <a href="https://t.me/+T-xYOtvS4IwwY2U9">
+          <a target='_blank' href="https://t.me/+T-xYOtvS4IwwY2U9">
           <BsTelegram className="text-2xl text-white"  />
         
           </a>
@@ -107,7 +107,7 @@ const ContactSection = () => {
                   <input
                     type="text"
                     name="name"
-                    className="form-control w-full p-3 border border-gray-300 rounded-md"
+                    className="form-control text-black w-full p-3 border border-gray-300 rounded-md"
                     id="name"
                     required
                     value={formData.name}
@@ -118,7 +118,7 @@ const ContactSection = () => {
                   <label htmlFor="email" className="text-lg">Your Email</label>
                   <input
                     type="email"
-                    className="form-control w-full p-3 border border-gray-300 rounded-md"
+                    className="form-control text-black w-full p-3 border border-gray-300 rounded-md"
                     name="email"
                     id="email"
                     required
@@ -132,7 +132,7 @@ const ContactSection = () => {
                 <label htmlFor="subject" className="text-lg">Team Name</label>
                 <input
                   type="text"
-                  className="form-control w-full p-3 border border-gray-300 rounded-md"
+                  className="form-control w-full text-black p-3 border border-gray-300 rounded-md"
                   name="subject"
                   id="subject"
                   required
@@ -144,7 +144,7 @@ const ContactSection = () => {
               <div className="form-group">
                 <label htmlFor="message" className="text-lg">Queries</label>
                 <textarea
-                  className="form-control w-full p-3 border border-gray-300 rounded-md"
+                  className="form-control text-black w-full p-3 border border-gray-300 rounded-md"
                   name="message"
                   rows="10"
                   required

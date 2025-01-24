@@ -37,8 +37,8 @@ export const items = [
 
 export const faqs = [
 	{
-		question: "Is this hackathon an online event or offline?",
-		answer: "Hackvanova 4.0 is an offline event."
+		question: "What tools and resources are available for Hackanova 4.0 participants?",
+		answer: "Participants get access to mentoring sessions and technical support during the event."
 	},
 	{
 		question: "Who is eligible to apply?",
@@ -49,8 +49,8 @@ export const faqs = [
 		answer: "No, there is no registration fee for participating in Hackanova 4.0."
 	},
 	{
-		question: "What are the selection criteria?",
-		answer: "Selection is based on the creativity and feasibility of your idea as mentioned during registration."
+		question: "How can I stay updated about Hackanova 4.0?",
+		answer: "Join our Telegram group for updates! You can find the link to join at theend of the registration form."
 	},
 	
 
@@ -60,8 +60,8 @@ export const faqs = [
 	},
 	
 	{
-		question: "Can I start working on my hack before the event?",
-		answer: "No, all development must begin after the event officially starts to ensure fairness."
+		question: "What are the team requirements for Hackanova 4.0?",
+		answer: "Teams can consist of 2-4 members. Only the team leader needs to submit the registration form."
 	},
 	{
 		question: "Will accommodation and food be provided?",

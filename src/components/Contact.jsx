@@ -11,10 +11,10 @@ const ImageClipBox = ({ src, clipClass }) => (
 
 const Contact = () => {
   return (
-    <div id="contact" className="mt-20 min-h-96 w-screen bg-gradient-to-b from-black via-black to-purple-950 ">
+    <div id="contact" className="mt-16 min-h-96 w-screen bg-gradient-to-b from-black via-black to-purple-950 ">
       <div className="relative rounded-lg  py-24 text-blue-50 sm:overflow-hidden">
       
-        <div className="flex flex-col justify-center items-center mt-10" >
+        <div className="flex flex-col justify-center items-center mt-5" >
          <AnimatedTitle title="Hackanova 4.0" />
         </div>
         <ContactSection />
