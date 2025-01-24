@@ -128,9 +128,19 @@ const Features = () => (
     <BentoCard
       src="videos/feature-2.mp4"
       title={
+        <img src="./img/replit-light.png" alt="REPLIT LOGO" className="h-12"/>
+      }
+      dlink="https://replit.com"
+      
+    />
+  </BentoTilt>
+  <BentoTilt className="bento-tilt_1 md:col-span-1">
+    <BentoCard
+      src="videos/feature-2.mp4"
+      title={
         <img src="./img/xyz-logo-white.png" className="h-12" alt=".XYZ LOGO"/>
       }
-      dlink="https://devfolio.co"
+      dlink="https://gen.xyz/"
       
     />
   </BentoTilt>
