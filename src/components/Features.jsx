@@ -4,7 +4,6 @@ import Slider from "./Slider/Slider";
 import { FaqTeachers } from "./faq.jsx";
 import { faqs } from "../lib/data";
 import { BentoGridItem } from "./ui/bento-grid.jsx";
-import { img } from "framer-motion/client";
 
 export const BentoTilt = ({ children, className = "" }) => {
   const [transformStyle, setTransformStyle] = useState("");
@@ -44,8 +43,7 @@ export const BentoTilt = ({ children, className = "" }) => {
 };
 
 export const BentoCard = ({ src,dlink, title, description, isComingSoon }) => {
-  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
-  const [hoverOpacity, setHoverOpacity] = useState(0);
+ 
   const hoverButtonRef = useRef(null);
 
   const handleMouseMove = (event) => {
@@ -70,36 +68,12 @@ export const BentoCard = ({ src,dlink, title, description, isComingSoon }) => {
         autoPlay
         className="absolute left-0 top-0 size-full object-cover object-center"
       /> */}
-      <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
+      <div className="relative z-10 flex size-full flex-col justify-between items-center p-5 text-blue-50">
         <div>
-          <h1 className="bento-title special-font bg-gradient-to-r from-orange-600 via-orange-500 to-indigo-400 inline-block text-transparent bg-clip-text">{title}</h1>
-          {description && (
-            <p className="mt-3 max-w-72 text-xs md:text-base">{description}</p>
-          )}
+          <a href={dlink} target="_blank">
+            {title}
+          </a>
         </div>
-
-        {isComingSoon && (
-          <div
-            ref={hoverButtonRef}
-            onMouseMove={handleMouseMove}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            className="border-hsla mt-3 relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white/20"
-          >
-            {/* Radial gradient hover effect */}
-            <div
-              className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"
-              style={{
-                opacity: hoverOpacity,
-                background: `radial-gradient(100px circle at ${cursorPosition.x}px ${cursorPosition.y}px, #656fe288, #00000026)`,
-              }}
-            />
-            <TiLocationArrow className="relative z-20 text-white" />
-            <a className="text-white" href={dlink} target="_blank" >
-              <p className="relative z-20 ">Visit</p>
-            </a>
-          </div>
-        )}
       </div>
     </div>
   );
@@ -119,7 +93,7 @@ const Features = () => (
       </div>
 
    
-      <div className="grid gap-4 w-full  md:gap-7 lg:grid-cols-3">
+      <div className="grid gap-4 w-full  md:gap-7 lg:grid-cols-4">
   <BentoTilt className="bento-tilt_1 md:col-span-1">
     <BentoCard
       src="videos/feature-2.mp4"
@@ -127,8 +101,7 @@ const Features = () => (
         <img src="./img/Devfolio_Logo-White.png" className="h-12" alt="DEVFOLIO LOGO"/>
       }
       dlink="https://devfolio.co"
-      description="Devfolio is a platform that helps people host and manage hackathons, and create online portfolios."
-      isComingSoon
+      
     />
   </BentoTilt>
   <BentoTilt className="bento-tilt_1 md:col-span-1">
@@ -138,8 +111,7 @@ const Features = () => (
         <img src="./img/Polygon_Logo-White@2x.png" className="h-12" alt="POLYGON LOGO"/>
       }
       dlink="https://polygon.technology/"
-      description="Devfolio is a platform that helps people host and manage hackathons, and create online portfolios."
-      isComingSoon
+      
     />
   </BentoTilt>
   <BentoTilt className="bento-tilt_1 md:col-span-1">
@@ -149,8 +121,17 @@ const Features = () => (
         <img src="./img/ethindia-light.png" alt="ETHINDIA LOGO" className="h-12"/>
       }
       dlink="https://ethindia.co"
-      description="Devfolio is a platform that helps people host and manage hackathons, and create online portfolios."
-      isComingSoon
+      
+    />
+  </BentoTilt>
+  <BentoTilt className="bento-tilt_1 md:col-span-1">
+    <BentoCard
+      src="videos/feature-2.mp4"
+      title={
+        <img src="./img/xyz-logo-white.png" className="h-12" alt=".XYZ LOGO"/>
+      }
+      dlink="https://devfolio.co"
+      
     />
   </BentoTilt>
 </div>
@@ -165,7 +146,8 @@ const Features = () => (
 		</div>
     
     </div>
-    <div className="p-2 lg:w-2/5 mx-auto mt-24">
+    <div className="mt-10 p-10 dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2 justify-center items-center relative overflow-hidden">
+    <div className="p-2  lg:w-2/5 mx-auto ">
     <h1 className="text-5xl text-white font-bold text-center">Meet the Team</h1>
     <BentoGridItem 
     title="TSDW Technical Team"
@@ -178,6 +160,8 @@ From setting up platforms to troubleshooting in real-time, the team fosters a co
     }
     />
     </div>
+    </div>
+   
   </section>
 );
 
