@@ -124,7 +124,7 @@ const Features = () => (
       
     />
   </BentoTilt>
-  <BentoTilt className="bento-tilt_1 md:col-span-1">
+  {/* <BentoTilt className="bento-tilt_1 md:col-span-1">
     <BentoCard
       src="videos/feature-2.mp4"
       title={
@@ -133,7 +133,7 @@ const Features = () => (
       dlink="https://replit.com"
       
     />
-  </BentoTilt>
+  </BentoTilt> */}
   <BentoTilt className="bento-tilt_1 md:col-span-1">
     <BentoCard
       src="videos/feature-2.mp4"
