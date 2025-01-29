@@ -144,12 +144,12 @@ const Features = () => (
                         src='videos/feature-2.mp4'
                         title={
                             <img
-                                src='./img/xyz-logo-white.png'
+                                src='./img/Aptos_Primary_WHT.png'
                                 className='h-12'
                                 alt='.XYZ LOGO'
                             />
                         }
-                        dlink='https://gen.xyz/'
+                        dlink='https://aptosfoundation.org/'
                     />
                 </BentoTilt>
                 <BentoTilt className='bento-tilt_1 md:col-span-1'>
@@ -157,12 +157,12 @@ const Features = () => (
                         src='videos/feature-2.mp4'
                         title={
                             <img
-                                src='./img/Aptos_Primary_WHT.png'
+                                src='./img/xyz-logo-white.png'
                                 className='h-12'
                                 alt='.XYZ LOGO'
                             />
                         }
-                        dlink='https://aptosfoundation.org/'
+                        dlink='https://gen.xyz/'
                     />
                 </BentoTilt>
             </div>
