@@ -13,21 +13,21 @@ export function TimelineDemo() {
           ),
       },
       {
-          title: "16th February 2025",
+          title: "17th February 2025",
           content: (
               <div>
                   <p className='text-neutral-200 '>
-                      Deadline for Hardware Online Idea Submission
+                      Deadline for Online Idea Submission
                   </p>
               </div>
           ),
       },
       {
-          title: "17th February 2025",
+          title: "18th February 2025",
           content: (
               <div>
                   <p className='text-neutral-200 '>
-                      Deadline for Software Online Idea Submission
+                    Hardware Round 1 - Virtual Screening
                   </p>
               </div>
           ),
