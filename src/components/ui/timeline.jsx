@@ -35,7 +35,7 @@ export const Timeline = ({ data }) => {
         </h2>
         <div className="flex gap-10">
   <a
-    href="https://example.com" // Replace with your desired URL
+    href="https://tiny.cc/8ul8001" // Replace with your desired URL
     target="_blank"
     rel="noopener noreferrer"
     className="px-6 py-3 bg-gradient-to-r from-purple-700 to-purple-900 text-white font-bold text-lg rounded-md border-dashed border-2 border-gray-300 hover:shadow-lg transition-shadow"
@@ -44,7 +44,7 @@ export const Timeline = ({ data }) => {
   </a>
 
   <a
-    href="https://example.com" // Replace with your desired URL
+    href="https://tiny.cc/eul8001" // Replace with your desired URL
     target="_blank"
     rel="noopener noreferrer"
     className="px-6 py-3 bg-gradient-to-r from-purple-700 to-purple-900 text-white font-bold text-lg rounded-md border-dashed border-2 border-gray-300 hover:shadow-lg transition-shadow"
