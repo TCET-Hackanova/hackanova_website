@@ -53,56 +53,6 @@ export function TimelineDemo() {
       ),
     },
   ];
-  const Hardware_data = [
-    {
-      title: "24th January 2025",
-      content: (
-        <div>
-          <p
-            className="text-neutral-200 ">
-           Registration Commences
-          </p>
-          
-        </div>
-      ),
-    },
-    {
-      title: "15th February 2025",
-      content: (
-        <div>
-          
-          <p
-            className="text-neutral-200 ">
-           Online Idea Submission</p>
-          
-        </div>
-      ),
-    },
-    {
-      title: "18th February 2025",
-      content: (
-        <div>
-          <p
-            className="text-neutral-200 ">
-            Shortlisted Teams Announced
-          </p>
-
-          </div>   
-      ),
-    },
-    {
-      title: "21st February 2025",
-      content: (
-        <div>
-          <p
-            className="text-neutral-200 ">
-            Final Round of Competition
-          </p>
-
-          </div>   
-      ),
-    },
-  ];
   return (
       <div
           id='timeline'
