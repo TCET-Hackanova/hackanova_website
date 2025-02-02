@@ -4,54 +4,54 @@ import { Timeline } from "./ui/timeline";
 
 export function TimelineDemo() {
   const data = [
-    {
-      title: "24th January 2025",
-      content: (
-        <div>
-          <p
-            className="text-neutral-200 ">
-           Registration Commences
-          </p>
-          
-        </div>
-      ),
-    },
-    {
-      title: "15th February 2025",
-      content: (
-        <div>
-          
-          <p
-            className="text-neutral-200 ">
-           Deadline for Software Online Idea Submission</p>
-          
-        </div>
-      ),
-    },
-    {
-      title: "18th February 2025",
-      content: (
-        <div>
-          <p
-            className="text-neutral-200 ">
-            Shortlisted Teams Announced
-          </p>
-
-          </div>   
-      ),
-    },
-    {
-      title: "21st February 2025",
-      content: (
-        <div>
-          <p
-            className="text-neutral-200 ">
-            Final Round of Competition
-          </p>
-
-          </div>   
-      ),
-    },
+      {
+          title: "24th January 2025",
+          content: (
+              <div>
+                  <p className='text-neutral-200 '>Registration Commences</p>
+              </div>
+          ),
+      },
+      {
+          title: "16th February 2025",
+          content: (
+              <div>
+                  <p className='text-neutral-200 '>
+                      Deadline for Hardware Online Idea Submission
+                  </p>
+              </div>
+          ),
+      },
+      {
+          title: "17th February 2025",
+          content: (
+              <div>
+                  <p className='text-neutral-200 '>
+                      Deadline for Software Online Idea Submission
+                  </p>
+              </div>
+          ),
+      },
+      {
+          title: "18th February 2025",
+          content: (
+              <div>
+                  <p className='text-neutral-200 '>
+                      Shortlisted Teams Announced
+                  </p>
+              </div>
+          ),
+      },
+      {
+          title: "21st February 2025",
+          content: (
+              <div>
+                  <p className='text-neutral-200 '>
+                      Final Round of Competition
+                  </p>
+              </div>
+          ),
+      },
   ];
   return (
       <div
