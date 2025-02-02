@@ -146,7 +146,7 @@ const Features = () => (
                             <img
                                 src='./img/Aptos_Primary_WHT.png'
                                 className='h-12'
-                                alt='.XYZ LOGO'
+                                alt='APTOS LOGO'
                             />
                         }
                         dlink='https://aptosfoundation.org/'
@@ -163,6 +163,19 @@ const Features = () => (
                             />
                         }
                         dlink='https://gen.xyz/'
+                    />
+                </BentoTilt>
+                <BentoTilt className='bento-tilt_1 md:col-span-1'>
+                    <BentoCard
+                        src='videos/feature-2.mp4'
+                        title={
+                            <img
+                                src='./img/SYBGEN.png'
+                                className='h-12'
+                                alt='SYBGEN LOGO'
+                            />
+                        }
+                        dlink='https://sybgen.com/'
                     />
                 </BentoTilt>
             </div>
