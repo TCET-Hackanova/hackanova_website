@@ -33,7 +33,7 @@ export const Timeline = ({ data }) => {
         <h2 className="text-3xl md:text-4xl mb-4 text-white max-w-4xl">
           Hack the Dates
         </h2>
-        <div className="flex justify-center gap-10">
+        <div className="flex gap-10">
   <a
     href="https://example.com" // Replace with your desired URL
     target="_blank"
