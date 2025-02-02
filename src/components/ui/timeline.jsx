@@ -33,7 +33,7 @@ export const Timeline = ({ data }) => {
         <h2 className="text-3xl md:text-4xl mb-4 text-white max-w-4xl">
           Software Time Line
         </h2>
-        <div className="flex justify-center">
+        <div className="flex justify-center gap-4">
   <a
     href="https://example.com" // Replace with your desired URL
     target="_blank"
