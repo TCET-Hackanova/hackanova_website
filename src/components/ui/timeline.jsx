@@ -31,7 +31,7 @@ export const Timeline = ({ data }) => {
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
       
         <h2 className="text-3xl md:text-4xl mb-4 text-white max-w-4xl">
-          Software Time Line
+          Hack the Dates
         </h2>
         <div className="flex justify-center gap-4">
   <a
