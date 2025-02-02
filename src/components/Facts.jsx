@@ -109,7 +109,7 @@ const SkeletonTwo = () => {
   });
 
   useEffect(() => {
-    const endDate = new Date("2025-02-15").getTime();
+    const endDate = new Date("2025-02-17").getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -350,7 +350,7 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Registrations are Open Till 15th Feb 2025",
+    title: "Registrations are Open Till 17th Feb 2025",
     description: (
       <span className="text-sm">Pack your bags and get ready to hack.</span>
     ),
