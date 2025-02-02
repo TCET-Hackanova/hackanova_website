@@ -178,6 +178,32 @@ const Features = () => (
                         dlink='https://sybgen.com/'
                     />
                 </BentoTilt>
+                <BentoTilt className='bento-tilt_1 flex-1 min-w-[calc(25%-1rem)] max-w-[calc(25%-1rem)]'>
+                    <BentoCard
+                        src='videos/feature-2.mp4'
+                        title={
+                            <img
+                                src='./img/Startupnews.png'
+                                className='h-12'
+                                alt='StartupNews LOGO'
+                            />
+                        }
+                        dlink='https://startupnews.fyi/'
+                    />
+                </BentoTilt>
+                <BentoTilt className='bento-tilt_1 flex-1 min-w-[calc(25%-1rem)] max-w-[calc(25%-1rem)]'>
+                    <BentoCard
+                        src='videos/feature-2.mp4'
+                        title={
+                            <img
+                                src='./img/Interviewbuddy.png'
+                                className='h-12'
+                                alt='InterviewBuddy LOGO'
+                            />
+                        }
+                        dlink='https://interviewbuddy.net/'
+                    />
+                </BentoTilt>
             </div>
         </div>
         <Slider />
