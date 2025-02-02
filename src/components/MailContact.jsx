@@ -58,7 +58,7 @@ const ContactSection = () => {
 
               <div className="linktree text-left">
                 <i className="bi bi-envelope text-3xl"></i>
-                <h4 className="text-xl font-semibold">linktree:</h4>
+                <h4 className="text-xl font-semibold">Access linktree for Google forms and PPT Templates:</h4>
                 <p>
                   <a target='_blank' href="https://linktr.ee/hackanova4.0" className="text-blue-500">
                    linktr.ee/hackanova4.0 
