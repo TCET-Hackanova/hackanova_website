@@ -33,6 +33,7 @@ export const Timeline = ({ data }) => {
         <h2 className="text-3xl md:text-4xl mb-4 text-white max-w-4xl">
           Software Time Line
         </h2>
+        <div className="flex justify-center">
   <a
     href="https://example.com" // Replace with your desired URL
     target="_blank"
@@ -42,7 +43,15 @@ export const Timeline = ({ data }) => {
     Software Brochure
   </a>
 
-
+  <a
+    href="https://example.com" // Replace with your desired URL
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-6 py-3 bg-gradient-to-r from-purple-700 to-purple-900 text-white font-bold text-lg rounded-md border-dashed border-2 border-gray-300 hover:shadow-lg transition-shadow"
+  >
+    Hardware Brochure
+  </a>
+</div>
         
       </div>
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
