@@ -41,7 +41,6 @@ const About = () => {
     });
 
     return (
-
         <div id='about' className=' w-screen'>
             <div className='z- mb-24 mt-52 flex flex-col items-center gap-2 px-2'>
                 {/* <div className="z-10 before:bg-[radial-gradient(50%_100%,#8E24AA,transparent)] relative before:absolute before:inset-[-10%_-2%] before:-z-10 before:blur-3xl before:rounded-t-full"> */}
@@ -50,21 +49,21 @@ const About = () => {
                     title='TSDW Presents'
                     containerClass='mt-5 !text-white  text-center'
                 />
-                <AnimatedTitle
-                    title='Hack<b>a</b>Nova 4.0'
-                    containerClass=' bg-gradient-to-bl from-blue-500 to-blue-800 bg-clip-text text-transparent leading-normal   text-center'
-                />
+                <a target='_blank' href='https://linktr.ee/hackanova4.0'>
+                    <AnimatedTitle
+                        title='Hack<b>a</b>Nova 4.0'
+                        containerClass=' bg-gradient-to-bl from-blue-500 to-blue-800 bg-clip-text text-transparent leading-normal   text-center'
+                    />
+                </a>
 
                 {/* </div> */}
 
-                <a target="_blank"
-                    href='https://hackanova-5.devfolio.co'
-                >
-                        <img
-                            src='./img/_Dark.png'
-                            className='h-12 mb-2'
-                            alt='DEVFOLIO LOGO'
-                        />
+                <a target='_blank' href='https://hackanova-5.devfolio.co'>
+                    <img
+                        src='./img/_Dark.png'
+                        className='h-12 mb-2'
+                        alt='DEVFOLIO LOGO'
+                    />
                 </a>
 
                 <BentoGridThirdDemo />

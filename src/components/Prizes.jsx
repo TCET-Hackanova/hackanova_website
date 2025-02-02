@@ -6,7 +6,7 @@ import { CanvasRevealEffect } from "./ui/canvas-reveal-effect";
 
 export function CanvasRevealEffectDemo() {
   return (<div id="prizes">
-  <h1 className="text-white lg:mt-5 text-center lg:text-5xl text-4xl font-bold"><span className=" text-white">Prize Pool</span></h1>
+  <h1 className="text-white lg:mt-5 text-center lg:text-5xl text-4xl font-bold"><span className=" text-white">Software Prize Pool</span></h1>
     <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}
       className="py-20 mt-5 mb-10 grid lg:grid-cols-[repeat(3,1fr)] *:aspect-square bg-[radial-gradient(circle,purple,transparent_35%)] bg-black w-full lg:gap-24 gap-12 max-w-screen-lg mx-auto lg:px-5 px-12">
       <Card  title="₹20000" icon={<AceternityIcon2 />}>
@@ -30,6 +30,26 @@ export function CanvasRevealEffectDemo() {
           colors={[[125, 211, 252]]} />
       </Card>
     </motion.div>
+<h1 className="text-white lg:mt-5 text-center lg:text-5xl text-4xl font-bold">
+  <span className=" text-white">Hardware Prize Pool</span>
+</h1>
+<motion.div
+  initial={{ scale: 0 }}
+  animate={{ scale: 1 }}
+  className="py-20 mt-5 mb-10 grid lg:grid-cols-2 grid-cols-1 bg-[radial-gradient(circle,purple,transparent_0%)] bg-black w-full lg:gap-24 gap-12 max-w-screen-lg mx-auto lg:px-5 px-12"
+>
+  <Card title="₹15000" icon={<AceternityIcon />}>
+    <CanvasRevealEffect animationSpeed={5.1} containerClassName="bg-emerald-900" />
+  </Card>
+  <Card title="₹8000" icon={<AceternityIcon2 />}>
+    <CanvasRevealEffect
+      animationSpeed={3}
+      containerClassName="bg-sky-600"
+      colors={[[125, 211, 252]]}
+    />
+  </Card>
+</motion.div>
+
   </ div>);
 }
 

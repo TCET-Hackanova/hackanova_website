@@ -2,8 +2,59 @@
 import React from "react";
 import { Timeline } from "./ui/timeline";
 
+import { Timeline2 } from "./ui/timeline2";
 export function TimelineDemo() {
   const data = [
+    {
+      title: "24th January 2025",
+      content: (
+        <div>
+          <p
+            className="text-neutral-200 ">
+           Registration Commences
+          </p>
+          
+        </div>
+      ),
+    },
+    {
+      title: "15th February 2025",
+      content: (
+        <div>
+          
+          <p
+            className="text-neutral-200 ">
+           Online Idea Submission</p>
+          
+        </div>
+      ),
+    },
+    {
+      title: "18th February 2025",
+      content: (
+        <div>
+          <p
+            className="text-neutral-200 ">
+            Shortlisted Teams Announced
+          </p>
+
+          </div>   
+      ),
+    },
+    {
+      title: "21st February 2025",
+      content: (
+        <div>
+          <p
+            className="text-neutral-200 ">
+            Final Round of Competition
+          </p>
+
+          </div>   
+      ),
+    },
+  ];
+  const Hardware_data = [
     {
       title: "24th January 2025",
       content: (
@@ -59,7 +110,11 @@ export function TimelineDemo() {
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <p className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
       <Timeline data={data} />
-      </p>
+            </p>
+      {/* <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      <p className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
+      <Timeline2 data={Hardware_data} /> */}
+      {/* </p> */}
     </div>
   );
 }

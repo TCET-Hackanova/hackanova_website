@@ -31,8 +31,18 @@ export const Timeline = ({ data }) => {
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
       
         <h2 className="text-3xl md:text-4xl mb-4 text-white max-w-4xl">
-          Hack the Dates
+          Software Time Line
         </h2>
+  <a
+    href="https://example.com" // Replace with your desired URL
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-6 py-3 bg-gradient-to-r from-purple-700 to-purple-900 text-white font-bold text-lg rounded-md border-dashed border-2 border-gray-300 hover:shadow-lg transition-shadow"
+  >
+    Software Brochure
+  </a>
+
+
         
       </div>
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
