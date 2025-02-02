@@ -89,7 +89,7 @@ const Features = () => (
                 <p className='max-w-md font-circular-web text-lg text-blue-50 opacity-50'></p>
             </div>
 
-            <div className='grid gap-4 w-full  md:gap-7 lg:grid-cols-4'>
+            <div className='grid gap-4 w-full  md:gap-7 lg:grid-cols-4 justify-items-center'>
                 <BentoTilt className='bento-tilt_1 md:col-span-1'>
                     <BentoCard
                         src='videos/feature-2.mp4'
