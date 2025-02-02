@@ -56,8 +56,7 @@ const About = () => {
                     />
                 </a>
 
-                <p className='text-center text-xl font-circular-web text-white '> <b>Register of Free now</b></p>
-                <br></br>
+                <p className='text-center text-xl font-circular-web text-white md:5 '> <b>Register for Free now</b></p>
                 {/* </div> */}
 
                 <a target='_blank' href='https://hackanova-5.devfolio.co'>
