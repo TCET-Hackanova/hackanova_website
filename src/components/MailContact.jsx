@@ -50,12 +50,21 @@ const ContactSection = () => {
                 <i className="bi bi-envelope text-3xl"></i>
                 <h4 className="text-xl font-semibold">Email:</h4>
                 <p>
-                  <a target='_blank' href="mailto:${emailUser}@${emailDomain}?subject=Hackanova%20Queries" className="text-blue-500">
+                  <a target='_blank' href="mailto:tcet.hackanova@gmail.com?subject=Hackanova%20Queries" className="text-blue-500">
                     tcet.hackanova@gmail.com
                   </a>
                 </p>
               </div>
 
+              <div className="linktree text-left">
+                <i className="bi bi-envelope text-3xl"></i>
+                <h4 className="text-xl font-semibold">linktree:</h4>
+                <p>
+                  <a target='_blank' href="https://linktr.ee/hackanova4.0" className="text-blue-500">
+                    tcet.hackanova@gmail.com
+                  </a>
+                </p>
+              </div>
               <div className="phone text-left">
                 <i className="bi bi-phone text-3xl"></i>
                 <h4 className="text-xl font-semibold">Call:</h4>
