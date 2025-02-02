@@ -90,7 +90,7 @@ const Features = () => (
             </div>
 
             <div className='flex flex-wrap justify-center gap-4 w-full'>
-                <BentoTilt className='bento-tilt_1 md:col-span-1'>
+                <BentoTilt className='bento-tilt_1 md:w-1/4'>
                     <BentoCard
                         src='videos/feature-2.mp4'
                         title={
@@ -103,7 +103,7 @@ const Features = () => (
                         dlink='https://devfolio.co'
                     />
                 </BentoTilt>
-                <BentoTilt className='bento-tilt_1 md:col-span-1'>
+                <BentoTilt className='bento-tilt_1 md:w-1/4'>
                     <BentoCard
                         src='videos/feature-2.mp4'
                         title={
@@ -116,7 +116,7 @@ const Features = () => (
                         dlink='https://polygon.technology/'
                     />
                 </BentoTilt>
-                <BentoTilt className='bento-tilt_1 md:col-span-1'>
+                <BentoTilt className='bento-tilt_1 md:w-1/4'>
                     <BentoCard
                         src='videos/feature-2.mp4'
                         title={
@@ -129,7 +129,7 @@ const Features = () => (
                         dlink='https://ethindia.co'
                     />
                 </BentoTilt>
-                {/* <BentoTilt className="bento-tilt_1 md:col-span-1">
+                {/* <BentoTilt className="bento-tilt_1 md:w-1/4">
     <BentoCard
       src="videos/feature-2.mp4"
       title={
@@ -139,7 +139,7 @@ const Features = () => (
       
     />
   </BentoTilt> */}
-                <BentoTilt className='bento-tilt_1 md:col-span-1'>
+                <BentoTilt className='bento-tilt_1 md:w-1/4'>
                     <BentoCard
                         src='videos/feature-2.mp4'
                         title={
@@ -152,7 +152,7 @@ const Features = () => (
                         dlink='https://aptosfoundation.org/'
                     />
                 </BentoTilt>
-                <BentoTilt className='bento-tilt_1 md:col-span-1'>
+                <BentoTilt className='bento-tilt_1 md:w-1/4'>
                     <BentoCard
                         src='videos/feature-2.mp4'
                         title={
@@ -165,7 +165,7 @@ const Features = () => (
                         dlink='https://gen.xyz/'
                     />
                 </BentoTilt>
-                <BentoTilt className='bento-tilt_1 md:col-span-1'>
+                <BentoTilt className='bento-tilt_1 md:w-1/4'>
                     <BentoCard
                         src='videos/feature-2.mp4'
                         title={
