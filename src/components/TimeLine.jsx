@@ -23,7 +23,7 @@ export function TimelineDemo() {
           
           <p
             className="text-neutral-200 ">
-           Online Idea Submission</p>
+           Deadline for Software Online Idea Submission</p>
           
         </div>
       ),
