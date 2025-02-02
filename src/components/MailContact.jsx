@@ -61,7 +61,7 @@ const ContactSection = () => {
                 <h4 className="text-xl font-semibold">linktree:</h4>
                 <p>
                   <a target='_blank' href="https://linktr.ee/hackanova4.0" className="text-blue-500">
-                    tcet.hackanova@gmail.com
+                   linktr.ee/hackanova4.0 
                   </a>
                 </p>
               </div>
