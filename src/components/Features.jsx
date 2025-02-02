@@ -197,7 +197,7 @@ const Features = () => (
                         title={
                             <img
                                 src='./img/Interviewbuddy.png'
-                                className='h-12'
+                                className='h-12 scale-125'
                                 alt='InterviewBuddy LOGO'
                             />
                         }
