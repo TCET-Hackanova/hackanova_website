@@ -90,7 +90,7 @@ const Features = () => (
             </div>
 
             <div className='flex flex-wrap justify-center gap-4 w-full'>
-                <BentoTilt className='bento-tilt_1 flex-1 min-w-[calc(25%-1rem)] max-w-[calc(25%-1rem)]'>
+                <BentoTilt className='bento-tilt_1 flex-1 min-w-[calc(50%-1rem)] max-w-[calc(50%-1rem)] lg:min-w-[calc(25%-1rem)] lg:max-w-[calc(25%-1rem)]'>
                     <BentoCard
                         src='videos/feature-2.mp4'
                         title={
@@ -103,8 +103,7 @@ const Features = () => (
                         dlink='https://devfolio.co'
                     />
                 </BentoTilt>
-                <BentoTilt className='bento-tilt_1 flex-1 min-w-[calc(25%-1rem)] max-w-[calc(25%-1rem)]'>
-                    <BentoCard
+                <BentoTilt className='bento-tilt_1 flex-1 min-w-[calc(50%-1rem)] max-w-[calc(50%-1rem)] lg:min-w-[calc(25%-1rem)] lg:max-w-[calc(25%-1rem)]'><BentoCard
                         src='videos/feature-2.mp4'
                         title={
                             <img
@@ -116,8 +115,7 @@ const Features = () => (
                         dlink='https://polygon.technology/'
                     />
                 </BentoTilt>
-                <BentoTilt className='bento-tilt_1 flex-1 min-w-[calc(25%-1rem)] max-w-[calc(25%-1rem)]'>
-                    <BentoCard
+                <BentoTilt className='bento-tilt_1 flex-1 min-w-[calc(50%-1rem)] max-w-[calc(50%-1rem)] lg:min-w-[calc(25%-1rem)] lg:max-w-[calc(25%-1rem)]'> <BentoCard
                         src='videos/feature-2.mp4'
                         title={
                             <img
@@ -139,8 +137,7 @@ const Features = () => (
       
     />
   </BentoTilt> */}
-                <BentoTilt className='bento-tilt_1 flex-1 min-w-[calc(25%-1rem)] max-w-[calc(25%-1rem)]'>
-                    <BentoCard
+                 <BentoTilt className='bento-tilt_1 flex-1 min-w-[calc(50%-1rem)] max-w-[calc(50%-1rem)] lg:min-w-[calc(25%-1rem)] lg:max-w-[calc(25%-1rem)]'><BentoCard
                         src='videos/feature-2.mp4'
                         title={
                             <img
@@ -152,8 +149,7 @@ const Features = () => (
                         dlink='https://aptosfoundation.org/'
                     />
                 </BentoTilt>
-                <BentoTilt className='bento-tilt_1 flex-1 min-w-[calc(25%-1rem)] max-w-[calc(25%-1rem)]'>
-                    <BentoCard
+                <BentoTilt className='bento-tilt_1 flex-1 min-w-[calc(50%-1rem)] max-w-[calc(50%-1rem)] lg:min-w-[calc(25%-1rem)] lg:max-w-[calc(25%-1rem)]'><BentoCard
                         src='videos/feature-2.mp4'
                         title={
                             <img
@@ -165,8 +161,7 @@ const Features = () => (
                         dlink='https://gen.xyz/'
                     />
                 </BentoTilt>
-                <BentoTilt className='bento-tilt_1 flex-1 min-w-[calc(25%-1rem)] max-w-[calc(25%-1rem)]'>
-                    <BentoCard
+                <BentoTilt className='bento-tilt_1 flex-1 min-w-[calc(50%-1rem)] max-w-[calc(50%-1rem)] lg:min-w-[calc(25%-1rem)] lg:max-w-[calc(25%-1rem)]'><BentoCard
                         src='videos/feature-2.mp4'
                         title={
                             <img
@@ -178,8 +173,7 @@ const Features = () => (
                         dlink='https://sybgen.com/'
                     />
                 </BentoTilt>
-                <BentoTilt className='bento-tilt_1 flex-1 min-w-[calc(25%-1rem)] max-w-[calc(25%-1rem)]'>
-                    <BentoCard
+                <BentoTilt className='bento-tilt_1 flex-1 min-w-[calc(50%-1rem)] max-w-[calc(50%-1rem)] lg:min-w-[calc(25%-1rem)] lg:max-w-[calc(25%-1rem)]'><BentoCard
                         src='videos/feature-2.mp4'
                         title={
                             <img
@@ -191,8 +185,7 @@ const Features = () => (
                         dlink='https://startupnews.fyi/'
                     />
                 </BentoTilt>
-                <BentoTilt className='bento-tilt_1 flex-1 min-w-[calc(25%-1rem)] max-w-[calc(25%-1rem)]'>
-                    <BentoCard
+                <BentoTilt className='bento-tilt_1 flex-1 min-w-[calc(50%-1rem)] max-w-[calc(50%-1rem)] lg:min-w-[calc(25%-1rem)] lg:max-w-[calc(25%-1rem)]'><BentoCard
                         src='videos/feature-2.mp4'
                         title={
                             <img
