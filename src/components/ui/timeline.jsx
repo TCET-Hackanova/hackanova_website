@@ -52,7 +52,7 @@ export const Timeline = ({ data }) => {
     Hardware Brochure
   </a>
 </div>
-        
+      <h6 className="lg:text-lg text-sm mt-3">Note: A different set of Problem statements will be provided for offline finale</h6>
       </div>
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => (
