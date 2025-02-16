@@ -109,7 +109,8 @@ const SkeletonTwo = () => {
   });
 
   useEffect(() => {
-    const endDate = new Date("2025-02-17").getTime();
+    const endDate = new Date("2025-02-17T22:00:00").getTime();
+
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
