@@ -109,7 +109,7 @@ const SkeletonTwo = () => {
   });
 
   useEffect(() => {
-    const endDate = new Date("2025-02-17T23:59:00").getTime();
+    const endDate = new Date("2025-02-18T00:15:00").getTime();
 
 
     const timer = setInterval(() => {
@@ -123,6 +123,7 @@ const SkeletonTwo = () => {
           seconds: 0,
         });
       }
+      else {
 
       setTime({
         days: Math.floor(distance / (1000 * 60 * 60 * 24)),
@@ -132,6 +133,7 @@ const SkeletonTwo = () => {
         minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
         seconds: Math.floor((distance % (1000 * 60)) / 1000),
       });
+      }
     }, 1000);
 
     return () => clearInterval(timer);
