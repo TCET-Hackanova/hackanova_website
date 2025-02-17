@@ -109,12 +109,20 @@ const SkeletonTwo = () => {
   });
 
   useEffect(() => {
-    const endDate = new Date("2025-02-17T22:00:00").getTime();
+    const endDate = new Date("2025-02-17T23:59:00").getTime();
 
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
       const distance = endDate - now;
+      if (now > endDate) {
+        setTime({
+          days: 0,
+          hours: 0,
+          minutes: 0,
+          seconds: 0,
+        });
+      }
 
       setTime({
         days: Math.floor(distance / (1000 * 60 * 60 * 24)),
